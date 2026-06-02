@@ -1,1 +1,41 @@
-{"nome":"ronaldinho","idade":"78","cidade":"maringá","bairro":"castanhola","estado(UF)":"parana","cep":"34345548478","telefone":"347234883","data de nascimento":"09/12/2009","email":"ronaldo@lapada.seca","cpf":"09353463","rua":"lallalala","numero":"768"},{"nome":"gerson","idade":"52","cidade":"ponta grossa","bairro":"nova russia","estado(UF)":"parana","cep":"85924012","telefone":"9558438383","data de nascimento":"12/12/12","email":"gerson@parapequi","cpf":"948409","rua":"AAAAAAAA","numero":"894"}]
+[
+    {
+        "nome": "ronaldinho",
+        "idade": "78",
+        "cidade": "maringá",
+        "bairro": "castanhola",
+        "estado(UF)": "parana",
+        "cep": "34345548478",
+        "telefone": "347234883",
+        "data de nascimento": "09/12/2009",
+        "email": "ronaldo@lapada.seca",
+        "cpf": "09353463",
+        "rua": "lallalala",
+        "numero": "768"
+    },
+    {
+        "nome": "gerson",
+        "idade": "52",
+        "cidade": "ponta grossa",
+        "bairro": "nova russia",
+        "estado(UF)": "parana",
+        "cep": "85924012",
+        "telefone": "9558438383",
+        "data de nascimento": "12/12/12",
+        "email": "gerson@parapequi",
+        "cpf": "948409",
+        "rua": "AAAAAAAA!",
+        "numero": "894"
+    },
+    {
+        "nome": "richard pro marx",
+        "CPF": 1234567890,
+        "endereco": 987654321,
+        "cidade": "lalalalalala",
+        "bairro": "bibibibibi",
+        "CEP": "1234-5678",
+        "data de nascimento": "12 12 12",
+        "email": "richa@gmail.com",
+        "telefone": "9558438383"
+    }
+]
