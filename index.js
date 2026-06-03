@@ -1,6 +1,7 @@
 // npm init
 // npm i express
 // RAPIDAPI CLIENT
+// http localhost : 3000 / clientes/...
 
 const express = require('express')
 const app = express()
@@ -53,14 +54,22 @@ app.get("/clientes/:cpf", (req, res) => {
 })
 
 
-app.delete("clientes/:cpf", (req, res) => {
+app.delete("/clientes/:cpf", (req, res) => {
     const cpf = req.params.cpf
-    cliente.findindex("clientes/:cpf") 
-    function removercliente(indice){
-        produtos.splice(indice, 1)
-        res.status(2).json({erro: " cliente excluido"})
+    try{
+        const clientes = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+       const indice = clientes.findIndex((cliente) => cliente.cpf.replace(/\D/g, "") == cpf)
+       if(indice == -1){
+        res.status(404).json({resposta: "cliente não existe no banco de dados"})
+       }
+        clientes.splice(indice, 1)
+        fs.writeFileSync('bd.json', JSON.stringify(clientes), 'utf8')
+       res.status(200).json({resposta: "cliente removido"})
+    }catch(error) {
+        res.status(500).json({resposta: error.message})
     }
-    removercliente(1)
+    cliente.findindex("clientes/:cpf") 
+    
 })
 
 app.listen(port, ()=> {
