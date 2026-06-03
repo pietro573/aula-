@@ -38,13 +38,29 @@ app.get("/clientes", (req, res) => {
 })
 
 app.get("/clientes/:cpf", (req, res) => {
+    const cpf = req.params.cpf
     try{
         const clientes = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        res.status(200).json(clientes)
+       const cliente_encontrado = clientes.find((cliente) => cliente.cpf.replace(/\D/g, "") == cpf)
+       if(!cliente_encontrado) {
+        res.status(404).json({erro: "cliente não existe no banco de dados! "})
+       }
+       res.status(200).json(cliente_encontrado)
     }catch(error) {
         res.status(500).json({resposta: error.message})
     }
 
+})
+
+
+app.delete("clientes/:cpf", (req, res) => {
+    const cpf = req.params.cpf
+    cliente.findindex("clientes/:cpf") 
+    function removercliente(indice){
+        produtos.splice(indice, 1)
+        res.status(2).json({erro: " cliente excluido"})
+    }
+    removercliente(1)
 })
 
 app.listen(port, ()=> {
