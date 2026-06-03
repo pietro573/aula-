@@ -9,7 +9,7 @@
         "telefone": "347234883",
         "data de nascimento": "09/12/2009",
         "email": "ronaldo@lapada.seca",
-        "cpf": "09353463",
+        "cpf": "093-534-567-63",
         "rua": "lallalala",
         "numero": "768"
     },
@@ -23,7 +23,7 @@
         "telefone": "9558438383",
         "data de nascimento": "12/12/12",
         "email": "gerson@parapequi",
-        "cpf": "948409",
+        "cpf": "948-409-876-54",
         "rua": "AAAAAAAA!",
         "numero": "894"
     },
@@ -36,6 +36,7 @@
         "CEP": "1234-5678",
         "data de nascimento": "12 12 12",
         "email": "richa@gmail.com",
+        "cpf": "03-434-547-89",
         "telefone": "9558438383"
     }
 ]
